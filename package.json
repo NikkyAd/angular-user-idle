@@ -15,6 +15,7 @@
     "prebuild": "rimraf dist",
     "build": "ngc && rollup -c",
     "postbuild": "npm run copy && npm run clean",
+	 "prepare": "tsc -p tsconfig.json",
     "publish": "cd ./dist && npm publish"
   },
   "repository": {
